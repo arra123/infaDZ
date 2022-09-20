@@ -1,0 +1,10 @@
+x = [3, 4, 6, 3, 8, 12, 5, 7, 25, 232, 26, 73]
+h = []
+for i in x:
+    if i % 2 == 0:
+        i = i*min(x)
+        h = h + [i]
+    else:
+        i = i*max(x)
+        h = h + [i]
+print(h)
