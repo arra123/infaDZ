@@ -1,0 +1,6 @@
+tima = str(input())
+tima = tima.replace('-',':)')
+tima = tima.replace(':',':)')
+tima = tima.replace(',',':)')
+tima = tima.replace('.',':)')
+print(tima)
