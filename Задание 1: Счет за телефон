@@ -1,0 +1,22 @@
+min = int(input("введите голичество минут:"))
+sms = int(input("введите голичество смсок:"))
+sumzamin = 0
+sumzasms = 0
+nds = 4.4
+nal = 1.05
+d_min = 2.5
+d_sms = 1.5
+sum = 150
+totalprice = 0
+if min > 50:
+    sumzamin = (min - 50) * d_min
+    print("будет переплата за минуты в размере:", sumzamin)
+else:
+    print("минуты в норме")
+if sms > 50:
+    sumzasms = (sms - 50) * d_sms
+    print("будет переплата за смски в размере:", sumzasms)
+else:
+    print("смски в норме")
+totalprice = (sum + sumzamin + sumzasms + nds)*nal
+print("Итого:", "%.2f" % totalprice)
