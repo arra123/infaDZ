@@ -1,0 +1,9 @@
+tima = str(input())
+if 'ing' in tima:
+    tima = tima+"ly"
+    print(tima)
+elif len(tima) >= 3:
+    tima = tima+"ing"
+    print(tima)
+else:
+    print(tima)
