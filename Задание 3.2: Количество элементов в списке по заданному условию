@@ -1,0 +1,11 @@
+from random import randint
+n = int(input("введите количество элементов в списке:"))
+n_min = int(input("введите минимальный порог:"))
+n_max = int(input("введите максимальный порог:"))
+numbers = [randint(n_min, n_max) for a in range (n)]
+print(numbers)
+count = 0
+for i in numbers:
+    if -10 < i < 10:
+        count = count + 1
+print(count)
