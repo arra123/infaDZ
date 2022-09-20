@@ -1,0 +1,8 @@
+x = []
+for i in range(int(input("введите количество чисел в списке:"))):
+    x.append(int(input("введите числа:")))
+print(x)
+x.sort()
+x.pop(0)
+x.pop(-1)
+print(x)
