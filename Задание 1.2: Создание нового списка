@@ -1,0 +1,12 @@
+x = ['тима', 'аннет', 'анеля', 'роман', 'поля', 'кирилл', 'никита', 'малена', 'анна', 'павел', 'ринат', 'лелик',"ева", "александр"]
+y = x
+max = len(x[0])
+for i in range (1, len(x)):
+    if len(x[i]) > max:
+        max = len(x[i])
+min = len(y[0])
+for a in range (1, len(y)):
+    if len(x[a]) < min:
+        min = len(y[a])
+result = max + min
+print(result)
