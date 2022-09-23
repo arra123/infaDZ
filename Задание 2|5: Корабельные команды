@@ -1,0 +1,15 @@
+x = int(input("Введите количесвто людей:"))
+kom_1 = []
+kom_2 = []
+for i in range(x):
+    dan = input("Введите фомилию и возраст:")
+    dan_1 = dan.split()
+    vos = int(dan_1[1])
+    if (vos < 20) or (vos > 40):
+        kom_1.append(dan_1[0])
+    else:
+        kom_2.append(dan_1[0])
+kom_1.sort()
+kom_2.sort()
+print("1ая команда:", kom_1)
+print("2ая команда:", kom_2)
