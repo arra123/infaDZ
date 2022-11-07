@@ -1,0 +1,34 @@
+import math
+class Color ():
+    def  __init__(self, s):
+        self.color = s
+
+class Rectangle():
+    def __init__(self, w, h, c):
+        self.width = w
+        self.height = h
+        self.color = Color(c)
+    def square(self):
+        return self.width*self.height
+    def __repr__(self):
+        return 'цвет фигуры: ' + str(self.color.color) + '\nПлощадь фигуры: ' + str(self.square())
+
+
+
+class Circle():
+    def __init__(self, r, c):
+        self.radius = r
+        self.color = Color(c)
+    def square(self):
+        return math.pi*self.radius**2
+
+class Square(Rectangle):
+    def __init__(self, w, c):
+        self.width = w
+        self.height = w
+        self.color = Color(c)
+
+'''red = Color('red')
+print(red.color)
+rec1 = Rectangle(4,2,'red')
+print(rec1)''''''
