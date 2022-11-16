@@ -1,0 +1,16 @@
+from lab5 import *
+
+B = Point()
+A = Point(2, 0)
+C = Point(0,2)
+
+a = Point(1, 1)
+b = Point(1, -1)
+c = Point(-1, -1)
+d = Point(-1, 1)
+lst_ = [a, b, c, d]
+rectangle = Figure(lst_)
+
+print(rectangle.is_in(B))
+print(rectangle.is_in(A))
+print(rectangle.is_in(C))
